@@ -22,18 +22,19 @@ function BMICalculator() {
         setBmi(result)
     }
 
-    
+    localStorage.getItem("height", height)
+    localStorage.setItem("bmi", bmi)
 
     return (
-        <div className="container calculatorArea col-6">
+        <div className="bg-dark bg-gradient container calculatorArea col-6 shadow border-bottom">
             <input
-            className="input"
+            className="col-6 form-control my-2 fs-2 fw-bold"
             placeholder="Boy giriniz (cm)" value={height} onChange={handleHeight} />
             <input
-            className="input"
+            className="col-6 form-control my-2"
             placeholder="Kilo giriniz (kg)" value={weight} onChange={handleWeight}/>
-            <button className="btn btn-primary" onClick={hesapla} onKeyUp={hesapla}>Sonuç</button>
-            <h2>Your BMI is
+            <button className="btn  btn-outline-primary my-2" onClick={hesapla} onKeyUp={hesapla}>RESULT</button>
+           <h4><span className="text-light">Your BMI is</span>
                 {
 
                 (bmi == null) ? <p>_ _</p> 
@@ -44,7 +45,7 @@ function BMICalculator() {
                 ? 
                 <div>
 
-                <p style={{color: 'red'}}>{bmi} <br/> biraz kendine dikkat etmelisin</p> 
+                <p className="text-danger">{bmi} <br/>too much</p> 
                 <HightWeight />
                 </div>
                 : 
@@ -52,16 +53,16 @@ function BMICalculator() {
                 bmi < 18
                 ?
                 <div>
-                <p style={{color: 'red'}}>{bmi} <br/> Biraz Kilo Almalısın</p> 
+                <p className="text-danger">{bmi} <br/> too low</p> 
                 <LowWeight />
                 </div>
                 :
                 <div>
-                <p style={{color: 'green'}}>{bmi} <br/> idealsin, bebeğimsin </p> 
+                <p className="text-success">{bmi} <br/>ideal</p> 
                 <NormalWeight />
                 </div>
                 } 
-                </h2>
+                </h4>
                 
         </div>
     )

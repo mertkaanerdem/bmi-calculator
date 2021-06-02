@@ -5,21 +5,18 @@ import './Recipes.css'
 
 function HightWeight() {
     return (
-        <Card>
+        <Card className="border border-danger border-5 p-2 col-12">
             <Card.Body>
-            <Card.Header>
-                Çok Kilo Tarifi
+            <Card.Header className="text-danger">
+                a few ideas for you
                 </Card.Header>
             <Card.Text className="fontSize">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Quae, ab ex vitae eum sequi omnis fugiat repudiandae voluptatum et soluta.
-                Iure eum officiis laudantium esse harum quia nam pariatur vel.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Quae, ab ex vitae eum sequi omnis fugiat repudiandae voluptatum et soluta.
-                Iure eum officiis laudantium esse harum quia nam pariatur vel.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Quae, ab ex vitae eum sequi omnis fugiat repudiandae voluptatum et soluta.
-                Iure eum officiis laudantium esse harum quia nam pariatur vel.
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">fresh fruits</li>
+                <li class="list-group-item">whole grains</li>
+                <li class="list-group-item">proteins</li>
+                <li class="list-group-item">dairy</li>
+            </ul>
             </Card.Text>
             </Card.Body>
         </Card>
@@ -29,21 +26,16 @@ function HightWeight() {
 
 function NormalWeight() {
     return (
-        <Card>
+        <Card className="border border-success border-5 p-2 col-12">
             <Card.Body>
-            <Card.Header>
-                Normal Kilo Tarifi
+            <Card.Header className="text-success">
+                a few ideas for you
                 </Card.Header>
             <Card.Text className="fontSize">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Quae, ab ex vitae eum sequi omnis fugiat repudiandae voluptatum et soluta.
-                Iure eum officiis laudantium esse harum quia nam pariatur vel.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Quae, ab ex vitae eum sequi omnis fugiat repudiandae voluptatum et soluta.
-                Iure eum officiis laudantium esse harum quia nam pariatur vel.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Quae, ab ex vitae eum sequi omnis fugiat repudiandae voluptatum et soluta.
-                Iure eum officiis laudantium esse harum quia nam pariatur vel.
+            <ul class="list-group list-group-flush text-center">
+                <li class="list-group-item">You are doing well</li>
+
+            </ul>
             </Card.Text>
             </Card.Body>
         </Card>
@@ -52,21 +44,18 @@ function NormalWeight() {
 
 function LowWeight() {
     return (
-        <Card>
+        <Card className="border border-danger border-5 p-2 col-12">
             <Card.Body>
-            <Card.Header>
-                Düşük Kilo Tarifi
+            <Card.Header className="text-danger">
+                a few ideas for you
                 </Card.Header>
             <Card.Text className="fontSize">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Quae, ab ex vitae eum sequi omnis fugiat repudiandae voluptatum et soluta.
-                Iure eum officiis laudantium esse harum quia nam pariatur vel.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Quae, ab ex vitae eum sequi omnis fugiat repudiandae voluptatum et soluta.
-                Iure eum officiis laudantium esse harum quia nam pariatur vel.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Quae, ab ex vitae eum sequi omnis fugiat repudiandae voluptatum et soluta.
-                Iure eum officiis laudantium esse harum quia nam pariatur vel.
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">fresh fruits</li>
+                <li class="list-group-item">whole grains</li>
+                <li class="list-group-item">proteins</li>
+                <li class="list-group-item">dairy</li>
+            </ul>
             </Card.Text>
             </Card.Body>
         </Card>
