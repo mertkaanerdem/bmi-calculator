@@ -29,15 +29,15 @@ function BMICalculator() {
         <div className="bg-dark bg-gradient container calculatorArea col-6 shadow border-bottom">
             <input
             className="col-6 form-control my-2 fs-2 fw-bold"
-            placeholder="Boy giriniz (cm)" value={height} onChange={handleHeight} />
+            placeholder="Your height(cm)" value={height} onChange={handleHeight} />
             <input
             className="col-6 form-control my-2"
-            placeholder="Kilo giriniz (kg)" value={weight} onChange={handleWeight}/>
+            placeholder="Weight (kg)" value={weight} onChange={handleWeight}/>
             <button className="btn  btn-outline-primary my-2" onClick={hesapla} onKeyUp={hesapla}>RESULT</button>
            <h4><span className="text-light">Your BMI is</span>
                 {
 
-                (bmi == null) ? <p>_ _</p> 
+                (bmi == null) ? <p className="text-light">_ _</p> 
                 
                 :
 
