@@ -1,3 +1,5 @@
-# BMI CALCULATOR
+## BMI CALCULATOR
 
-This project comes from Patika.dev
+<img src="bmi-converter.gif">
+
+> This project comes from Patikadev
